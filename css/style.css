@@ -6,6 +6,8 @@
 
 body{
   font-family:Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: small;
 }
 
 
@@ -15,15 +17,35 @@ header{
   /* min-height: 70px; */
   height: 70px;
   background-color: black;
+  padding: 5px;
+
+}
+.container_header{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.container_header > *{
+  border-radius: 5px;
+  padding: 5px;
+  background-color: hsl(0deg 0% 29.41%);
+}
+
+.speker_view{
+  margin-right: 5px;
+}
+
+.fa-maximize{
 
 }
 
 
-
 /* * MAIN ////////////////////////////////////////////////////////////////////////////////// */
 main{
-  /* 170px è la somma dell'altezza di header e footer */
-  height: calc(100vh - 170px);
+  /* ! 170px è la somma dell'altezza di header e footer */
+  height: calc(100vh - 160px);
+  /* ! aggiunge la scrollbar - non spacca il layout*/
   overflow: auto;
 
   width: 100%;
@@ -51,6 +73,7 @@ main{
 .card{
   /* padding: 5px; */
   margin: 3px;
+  margin-top: 0px;
 
   /* width: 300px;
   height: 200px; 
@@ -69,7 +92,6 @@ main{
   bottom: 3px;
 
   background-color: rgba(0, 0, 0, 0.3);
-  color: white;
 
   padding: 5px;
   font-size: small;
@@ -81,33 +103,68 @@ main{
 /* * FOOTER ////////////////////////////////////////////////////////////////////////////////// */
 footer{
   background-color: rgb(34 34 34);
-  height: 100px;
-  
+  height: 90px;
+
+  /*! DA ELIMINARE*/
+  /** DA ELIMINARE*/
+  /*TODO DA ELIMINARE*/
+  /* ? DA ELIMINARE*/
+  /* height: calc(100vh - 170px);
+  overflow: auto; */
+}
+
+footer .fa-solid{
+  font-size: 25px;
+  padding: 10px;
+}
+
+footer .fa-angle-up{
+  /* vertical-align: bottom; */
+  font-size: small;
 
 }
 
+footer .row{
+  display: flex; 
+  justify-content: space-between;
+  /* align-items: center; */
+  align-items: start;
+}
 
+footer .row .col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
+  padding: 10px;
+} 
 
+footer .row .col.center > *{
+  /* margin-left: 5px;
+  margin-right: 5px; */
 
+  padding: 5px;
+}
 
+/* .text{
+  margin-right: 7px;
+} */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#end_call{
+  /* color: red;
+  background-color: hsl(0deg 0% 29.02%);
+  border: none;
+  height: 70px;
+  padding: 7px; */
+  
+  color: rgb(255, 255, 255);
+  background-color: hsl(0, 100%, 50%);
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  height: 31px;
+  padding: 7px;
+  margin-top: 15px;
+  /* margin: 10px; */
+}
