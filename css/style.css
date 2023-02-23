@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/* * HEADER ////////////////////////////////////////////////////////////////////////////////// */
+header{
+  /* min-height: 70px; */
+  height: 70px;
+  background-color: black;
+
+}
+
+
+
+/* * MAIN ////////////////////////////////////////////////////////////////////////////////// */
+main{
+  /* 170px è la somma dell'altezza di header e footer */
+  height: calc(100vh - 170px);
+  overflow: auto;
+
+  width: 100%;
+
+  background-color: rgb(0, 0, 0);
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.container{
+  width: 90%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.card{
+  padding: 5px;
+  /* width: 300px;
+  height: 300px; */
+  object-fit: cover;
+}
+
+
+
+
+/* * FOOTER ////////////////////////////////////////////////////////////////////////////////// */
+footer{
+  background-color: rgb(34 34 34);
+  height: 100px;
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
